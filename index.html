@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="nav-img-container">
+          <img src="images/icon-menu.svg" alt="" id="hamburger">
+          <img src="images/logo.svg" alt="" id="logo">
+        </div>
+        <div class="nav-content">
+          <img src="images/icon-close.svg" alt="" id="close">
+          <div class="">
+            <p>Collections</p>
+            <p>Men</p>
+            <p>Women</p>
+            <p>About</p>
+            <p>Contact</p>
+          </div>
+        </div>
+        <div class="nav-img-container">
+          <div class="cart-container">
+            <div><p id="cart-number">0</p></div>
+            <img src="images/icon-cart.svg" alt="" id="cart">
+          </div>
+          <img src="images/image-avatar.png" alt="" id="avatar">
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+  <section>
+    <div id="container">
+      <div class="light-box">
+        <img src="images/icon-close.svg" alt="" id="light-box-close">
+        <div class="max-image-container">
+          <div class="light-box-nav-buttons">
+            <div class="button-container previous">
+              <img src="images/icon-previous.svg" alt="" id="previous">
+            </div>
+            <div class="button-container next">
+              <img src="images/icon-next.svg" alt="" id="next">
+            </div>
+          </div>
+          <img src="images/image-product-1.jpg" alt="" class="light-box-img-big">
+        </div>
+        
+        <div class="light-box-thumbnail-container">
+          <div class="min-image">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnail light-box-thumb-1">
+          </div>
+          <div class="min-image">
+            <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnail light-box-thumb-2">
+          </div>
+          <div class="min-image">
+            <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnail light-box-thumb-3">
+          </div>
+          <div class="min-image">
+            <img src="images/image-product-4-thumbnail.jpg" alt="" class="thumbnail light-box-thumb-4">
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+
+        <div class="order-cart">
+          <div class="cart-header">
+            <img src="images/icon-close.svg" alt="" id="cart-close">
+            <h1>Cart</h1>
+          </div>
+          <p class="cart-empty">Your cart is empty</p>
+          <p class="order-complete">Thank you for shopping with us</p> 
+          <div class="order-info-container">
+            <div class="order-info">
+    
+              <img src="images/image-product-1-thumbnail.jpg" alt="" id="cart-thumbnail">
+             
+              <div class="order-details">
+                <p>Autumn Limited Edition...</p>
+                <p>$125 x <span id="icon-cart-number">1</span>
+                  $<span id="price">375</span>.00
+                </p>
+              </div>
+              <img src="images/icon-delete.svg" alt="" id="delete">
+            </div>
+            <button id="order-button">Checkout</button>
+          </div>
+        </div>        
+
+        <div class="nav-buttons">
+          <div class="button-container previous">
+            <img src="images/icon-previous.svg" alt="" id="previous">
+          </div>
+          <div class="button-container next">
+            <img src="images/icon-next.svg" alt="" id="next">
+          </div>
+        </div>
+
+        <div class="max-image-container">
+          <img src="images/image-product-1.jpg" alt="" class="img-big">
+        </div>
+        
+        <div class="thumbnail-container">
+          <div class="min-image">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" class="thumbnail thumb-1">
+          </div>
+          <div class="min-image">
+            <img src="images/image-product-2-thumbnail.jpg" alt="" class="thumbnail thumb-2">
+          </div>
+          <div class="min-image">
+            <img src="images/image-product-3-thumbnail.jpg" alt="" class="thumbnail thumb-3">
+          </div>
+          <div class="min-image">
+            <img src="images/image-product-4-thumbnail.jpg" alt="" class="thumbnail thumb-4">
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <h4>Sneaker Company</h4>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. 
+          Featuring a durable rubber outer sole, 
+          they’ll withstand everything the weather can offer.
+        </p>
+        <div class="price-container">
+          <div class="discount-price">
+            <h2>$125.00</h2>
+            <p>50%</p>
+          </div>
+          <p>$250.00</p>
+        </div>
+        <div class="order-actions">
+          <div class="order-amount">
+            <button id="minus">
+              <img src="images/icon-minus.svg" alt="" class="minus">
+            </button>
+            <span id="order-number">0</span>
+            <button id="plus">
+              <img src="images/icon-plus.svg" alt="" class="plus">
+            </button>
+          </div>
+          <button class="add-to-cart">
+            <img src="images/icon-cart.svg" alt="" id="cart">
+            <p>Add to cart</p>
+          </button>
+        </div>
+        <p id="error-message">please select an item</p>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
